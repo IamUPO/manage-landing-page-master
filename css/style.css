@@ -114,6 +114,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    gap: 50px;
 }
 
 .hero-img {
@@ -130,13 +131,11 @@ header {
     font-weight: 600;
     font-size: 57px;
     color: var(--Dark-Blue);
-    margin-bottom: 50px;
 }
 
 .hero-infos p {
     color: var(--Dark-Grayish-Blue);
     font-size: 16px;
-    margin-bottom: 47px;
     width: 315px;
     line-height: 1.6;
     font-weight: 400;
@@ -258,10 +257,11 @@ header {
 
 .review {
     text-align: center;
+    margin-bottom: 3px;
 }
 
 .reviewer-photo {
-    margin-top: -;
+    margin-bottom: ;
 }
 
 .reviewer-details {
@@ -274,7 +274,7 @@ header {
     text-align: center;
     align-content: center;
     gap: 32px;
-    margin-top: -31px;
+    margin-top: -40px;
     height: 220px;
     width: 540px;
 }
@@ -283,6 +283,7 @@ header {
     font-size: 17px;
     color: var(--Dark-Blue);
     font-weight: 600;
+    padding-top: 15px;
 }
 
 .reviewer-details p {
@@ -327,7 +328,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 74px;
+    padding-top: 70px;
     padding-bottom: 74px;
 }
 
@@ -412,17 +413,21 @@ footer {
     margin-left: 124px;
     margin-right: 170px;
     display: flex;
-    justify-content: space-between;
     align-items: flex-start;
-    gap: 185px;
+    justify-content: space-between;
+    gap: 123px;
 }
 
-/* .footer-links ul {
-} */
+.footer-links ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 24px;
+}
+
 .footer-links ul li {
     list-style-type: none;
     margin-left: 0;
-    margin-bottom: 24px;
 }
 
 .footer-links a {
@@ -462,3 +467,30 @@ footer {
     bottom: -174px;
     right: 1009px;
 } */
+@media (max-width:1109px) {
+    .header-container,
+    .main-container,
+    .final-info-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width:949px) {
+    .hero-section,
+    .about-section {
+        flex-direction: column-reverse;
+        padding-top: 60px;
+        align-items: center;
+    }
+
+    .hero-infos,
+    .hero-img {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+    }
+}
